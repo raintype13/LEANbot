@@ -11,7 +11,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def send_welcome(message: types.Message):
     # Задаём путь к картинке как переменную
-    photo_path = r"C:\Users\a7805\OneDrive\Рабочий стол\ps_shablons\projects\lean\BOTimage.png"
+    photo_path = r"\BOTimage.png"
     photo = FSInputFile(photo_path)
     
     text = (
